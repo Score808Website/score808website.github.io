@@ -7,8 +7,8 @@
     <meta content='#212121' name='msapplication-navbutton-color'/>
     <link href='https://score808.candil.eu.org/favicon.ico' rel='icon' type='image/x-icon'/>
     <meta content='Sore808 catching your favorite soccer matches live has never been easier Sore 808 Website' name='description'/>
-    <meta name="keywords" content="score808 alternative, score 808, tigoals, livescore, football live">
-    <meta content='Score808 Live Website' property='og:title'/>
+    <meta name="keywords" content="score808alternative, score 808, tigoals, livescore, search engine optimization">
+    <meta content='Score808 Website' property='og:title'/>
     <link href='https://score808website.github.io/' rel='canonical'/>
     <meta content='https://score808website.github.io/' property='og:url'/>
     <meta content='Sore808 catching your favorite soccer matches live has never been easier Sore 808 Website' name='og:description'/>
@@ -41,7 +41,8 @@
   .YT-btn-text{margin-left:9px}
   #scrollButton{position:fixed;top:10px;left:13px;padding:4px 13px;;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3s ease}#scrollButton:hover{background-color:#0056b3}
   .live-status{position:relative}.live-status .text{font-weight:600;color:red;font-size:16px}.live-status .shape{position:relative;overflow:hidden;height:5px;display:flex;width:100%}.live-status .shape:after{content:"";position:absolute;height:2px;width:80%;background:red;left:-5%;top:0;animation:live 1.5s alternate infinite;transition:ease-out 0.75s}@keyframes live{0%{left:-110%}100%{left:110%}}
-</style>
+  ul#recent-posts{list-style:none;margin:0;padding:0;margin:5% auto;padding:10px;box-shadow:0 10px 5px -5px rgb(0 0 0 / .1);border:1px solid #ccc;font-family:'Open Sans',sans-serif;}li.recent-posts{display:block;clear:both;overflow:hidden;list-style:none;border-bottom:1px dotted #e4e4e4;word-break:break-word;padding:10px 0;margin:0}li.recent-posts:last-child{border-bottom:0}li.recent-posts a{color:#fff;text-decoration:none}li.recent-posts a:hover{color:#fff;text-decoration:none}
+  </style>
 </head>
 <body>
 <div class='container'>
@@ -193,7 +194,7 @@
     Disney+ Hotstar, provides access to a vast library of content, including live
     sports, movies, and TV shows.
   </p>
-  <h2 style="text-align: left;">9. Score808</h2>
+  <h2 style="text-align: left;">9. Score808 Live</h2>
   <p>
     Score808 is a free streaming site that has gained popularity among soccer fans
     for its wide range of live matches. The platform covers various leagues,
@@ -202,7 +203,7 @@
     However, the extensive coverage and ease of access make it a worthwhile option
     for many.
   </p>
-  <h2 style="text-align: left;">10. Tigoals</h2>
+  <h2 style="text-align: left;">10. Tigoals Live</h2>
   <p>
     Tigoals is another free streaming site that offers live soccer matches from
     around the world. The site is user-friendly and provides links to a variety of
@@ -220,11 +221,14 @@
     interested in, and enjoy the excitement of live soccer from the comfort of
     your home.
   </p>
+  <h2>Live Today</h2>
     <div id="content">
       <iframe title="score808" allowtransparency="yes" frameborder="0" height="800" loading="lazy" marginheight="0" marginwidth="0" scrolling="auto" src="https://www.score808.my.id/p/live.html" width="100%"></iframe>
 
     </div>
-
+    <br/>
+    <h2>Recent Live</h2>
+      <ul id="recent-posts"></ul>
 </div>
   
 		<div class='logo-footer'>
@@ -255,6 +259,10 @@
         behavior: 'smooth'
     });
 });
+var homePage="https://score808.candil.eu.org/",numPosts=10;function recentPosts(a){if(document.getElementById("recent-posts")){var e=a.feed.entry,title,link,content="",ct=document.getElementById("recent-posts");for(var i=0;i<numPosts;i++){for(var j=0;j<numPosts;j++){if(e[i].link[j].rel=="alternate"){link=e[i].link[j].href;break}}
+var title=e[i].title.$t;content+='<li class="recent-posts"><a href="'+link+'" title="'+title+'" target="_blank" rel="nofollow">'+title+'</a></li>'}
+ct.innerHTML=content}}
+var rcp=document.createElement('script');rcp.src=homePage+'/feeds/posts/summary?alt=json-in-script&orderby=published&max-results='+numPosts+'&callback=recentPosts';document.getElementsByTagName('head')[0].appendChild(rcp)
         //]]></script>
 </body>
 </html>
