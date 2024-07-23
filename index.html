@@ -76,11 +76,11 @@
 <div class="bioLink">
 <div class="bioLink-item">
 <div class="bioLink-shadow"></div>
-<a href="https://score808.candil.eu.org" target="_blank" title="Score808"><span class="bioLink-text">Website Official News</span></a>
+<a href="https://www.score808.my.id" target="_blank" title="Score808"><span class="bioLink-text">Website Official News</span></a>
 </div>
 <div class="bioLink-item">
 <div class="bioLink-shadow"></div>
-<a href="https://score808.candil.eu.org/p/score808-alternative-link.html" target="_blank" title="Live Score808"><span class="bioLink-text">Live Today</span></a>
+<a href="https://www.score808.my.id/p/score-808-live.html" target="_blank" title="Live Score808"><span class="bioLink-text">Live Today</span></a>
 </div>
 <div class="bioLink-item">
 <div class="bioLink-shadow"></div>
@@ -282,7 +282,7 @@
         behavior: 'smooth'
     });
 });
-var homePage="https://score808.candil.eu.org/",numPosts=10;function recentPosts(a){if(document.getElementById("recent-posts")){var e=a.feed.entry,title,link,content="",ct=document.getElementById("recent-posts");for(var i=0;i<numPosts;i++){for(var j=0;j<numPosts;j++){if(e[i].link[j].rel=="alternate"){link=e[i].link[j].href;break}}
+var homePage="https://www.score808.my.id",numPosts=10;function recentPosts(a){if(document.getElementById("recent-posts")){var e=a.feed.entry,title,link,content="",ct=document.getElementById("recent-posts");for(var i=0;i<numPosts;i++){for(var j=0;j<numPosts;j++){if(e[i].link[j].rel=="alternate"){link=e[i].link[j].href;break}}
 var title=e[i].title.$t;content+='<li class="recent-posts"><a href="'+link+'" title="'+title+'" target="_blank" rel="nofollow">'+title+'</a></li>'}
 ct.innerHTML=content}}
 var rcp=document.createElement('script');rcp.src=homePage+'/feeds/posts/summary?alt=json-in-script&orderby=published&max-results='+numPosts+'&callback=recentPosts';document.getElementsByTagName('head')[0].appendChild(rcp)
