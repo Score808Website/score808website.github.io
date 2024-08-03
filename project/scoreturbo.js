@@ -2,7 +2,7 @@
 * https://cdn.skypack.dev/-/@hotwired/turbo@v7.1.0-V83RMQBlYCPK9CvTqQoL/dist=es2020,mode=imports,min/optimized/@hotwired/turbo.js
 */
 function switchq(src){
-    document.getElementById("myIframe").innerHTML = '<turbo-frame loading="lazy" title="score808 indonesia" class="responsive-iframe" scrolling="no" alt="score 808" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; autoplay" allowfullscreen="allowfullscreen" frameborder="0" height="380" src="'+ src +'" width="100%"></turbo-frame>';
+    document.getElementById("myIframe").innerHTML = '<iframe loading="lazy" title="score808 indonesia" class="responsive-iframe" scrolling="no" alt="score 808" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; autoplay" allowfullscreen="allowfullscreen" frameborder="0" height="380" src="'+ src +'" width="100%"></iframe>';
 };
 var iframeslazy = document.querySelectorAll("iframe");
 for (var i = 0; i < iframeslazy.length; i++) { iframeslazy[i].setAttribute("loading","lazy-frame"); };
